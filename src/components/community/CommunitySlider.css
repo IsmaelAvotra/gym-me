@@ -1,0 +1,43 @@
+.community {
+  margin-bottom: 8rem;
+  overflow: hidden;
+}
+.communitySlider .swiper-wrapper {
+  height: 420px;
+  cursor: pointer;
+}
+
+.communitySlider img {
+  position: relative;
+}
+.communitySlider .author {
+  position: absolute;
+  bottom: 2rem;
+  padding: 0.5rem 1rem;
+  color: #ffffff;
+  text-align: center;
+}
+.author p {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.4rem;
+}
+
+.author h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+}
+.author h3 span {
+  color: #4ae290;
+}
+@media screen and (max-width: 1025px) {
+  .communitySlider .swiper-button-prev,
+  .communitySlider .swiper-button-next {
+    display: none;
+  }
+}

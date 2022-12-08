@@ -1,0 +1,41 @@
+.heading {
+  position: relative;
+  margin-left: 35%;
+  margin-bottom: 2rem;
+}
+
+.heading .icon {
+  width: 5rem;
+}
+
+.heading h2 {
+  position: absolute;
+  bottom: 1rem;
+  left: 3rem;
+  color: #131316;
+  font-size: 2.5rem;
+  font-family: 'inter';
+}
+
+.heading span {
+  color: #4ae290;
+}
+
+@media screen and (max-width: 1200px) {
+  .heading {
+    margin-left: 25%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .heading {
+    margin-left: 0;
+    text-align: center;
+    padding: 0 0.2rem;
+  }
+  .heading h2 {
+    position: relative;
+    left: 0;
+    font-size: 2.4rem;
+  }
+}

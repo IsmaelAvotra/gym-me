@@ -1,0 +1,147 @@
+.header {
+  position: sticky;
+  top: 0;
+  width: 100vw;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  font-family: 'Inter';
+  z-index: 11;
+  background-color: #131316;
+  position: relative;
+}
+
+.nav-mobile {
+  display: none;
+}
+
+nav ul {
+  display: flex;
+  gap: 2.5rem;
+}
+
+nav ul li {
+  list-style: none;
+  transition: 0.3s;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+nav ul li:hover a {
+  color: #4ae290;
+}
+
+.buttons {
+  display: flex;
+  gap: 4rem;
+  margin-right: 7rem;
+}
+
+.header .buttons button {
+  padding: 0.3rem 0.6rem;
+  text-transform: uppercase;
+  color: #fff;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.log {
+  background: none;
+  border: none;
+  border-radius: 2px;
+}
+
+.sign {
+  background-color: #4ae290;
+  border: none;
+  border-radius: 2px;
+}
+
+.sign:hover {
+  color: #131316 !important;
+}
+
+.log:hover {
+  background-color: #f9f9fc;
+  color: #131316 !important;
+}
+
+.menu {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .buttons {
+    margin-right: 2rem;
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .header {
+    padding: 0.5rem 1rem;
+  }
+
+  .buttons {
+    display: none;
+  }
+  .logo {
+    width: 6.5rem;
+  }
+  .menu {
+    display: block;
+    font-size: 2.2rem;
+    color: #4ae290;
+  }
+
+  nav ul {
+    display: none;
+  }
+  ul.active {
+    display: block;
+    position: absolute;
+    background-color: #131316;
+    padding: 2rem 1rem;
+    right: 0;
+    top: 3.5rem;
+    height: 25rem;
+    width: 30vw;
+    text-align: center;
+  }
+  ul.active li {
+    margin-bottom: 2rem;
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    padding: 0.2rem;
+  }
+
+  .logo {
+    width: 5rem;
+  }
+
+  .menu {
+    font-size: 1.8rem;
+  }
+  ul.active {
+    display: block;
+    position: absolute;
+    background-color: #131316;
+    padding: 2rem 1rem;
+    right: 0;
+    top: 2rem;
+    height: 25rem;
+    width: 50vw;
+    text-align: center;
+  }
+}

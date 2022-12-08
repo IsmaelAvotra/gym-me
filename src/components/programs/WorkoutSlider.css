@@ -1,0 +1,49 @@
+.workoutSlider .swiper-wrapper {
+  height: 420px;
+}
+
+.workoutSlider .swiper-button-prev::after,
+.workoutSlider .swiper-button-next::after {
+  content: '';
+}
+
+.workoutSlider .swiper-button-prev,
+.workoutSlider .swiper-button-next {
+  top: 90%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 36px;
+  height: 36px;
+}
+
+.workoutSlider .swiper-button-prev {
+  left: 88.4%;
+  background-image: url('../src/assets/img/workouts/icons/chevron-left.svg');
+}
+
+.workoutSlider .swiper-button-next {
+  background-image: url('../src/assets/img/workouts/icons/chevron-right.svg');
+  right: 66px;
+}
+.workoutSlider img {
+  position: relative;
+}
+.workoutSlider .workout-name {
+  color: red;
+  position: absolute;
+  bottom: 8rem;
+  left: 1rem;
+  background-color: #ffffff;
+
+  padding: 0.3rem 0.6rem;
+  font-family: 'Inter';
+  font-weight: 600;
+  color: #131316;
+  border-radius: 2px;
+}
+@media screen and (max-width: 1025px) {
+  .workoutSlider .swiper-button-prev,
+  .workoutSlider .swiper-button-next {
+    display: none;
+  }
+}

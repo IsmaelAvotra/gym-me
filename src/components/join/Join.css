@@ -1,0 +1,104 @@
+.join {
+  background-color: #26262d;
+  color: #ffffff;
+}
+
+.text-image {
+  display: flex;
+  align-items: center;
+  height: 35rem;
+}
+
+.text {
+  flex: 1;
+  padding-right: 18rem;
+  margin-top: 2rem;
+}
+
+.text h1 {
+  font-size: 3.5rem;
+  letter-spacing: 1px;
+  font-family: 'Inter';
+}
+
+.text h1 span {
+  color: #4ae290;
+}
+.text p {
+  font-family: 'Open Sans';
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.text button {
+  margin-left: 0rem;
+  padding: 0.8rem 2rem;
+  font-size: 0.8rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  color: #131316;
+  border-radius: 0.1rem;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.text button:hover {
+  background-color: #4ae290;
+}
+
+.text-image .image {
+  flex: 1;
+  max-width: 400px;
+  margin-left: 10rem;
+}
+
+@media screen and (max-width: 1100px) {
+  .text {
+    padding-right: 10rem;
+  }
+  .join .image {
+    margin-left: 6rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .text {
+    padding-right: 4rem;
+  }
+  .join .image {
+    margin-left: 4rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .text-image {
+    flex-direction: column;
+    height: 100%;
+  }
+  .text-image .text {
+    /* text-align: center; */
+    padding: 0 0.5rem;
+  }
+
+  .text-image .text h1 {
+    font-size: 3rem;
+  }
+  .text-image .text p {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .text-image button {
+    padding: 0.5rem 0.8rem;
+  }
+
+  .join .image {
+    margin-left: 0;
+  }
+  .join .image img {
+    width: 100%;
+  }
+}

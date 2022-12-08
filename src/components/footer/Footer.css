@@ -1,0 +1,29 @@
+.footer {
+  background-color: #131316;
+  padding: 4rem 2rem 2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer img {
+  width: 10rem;
+}
+
+.footer p {
+  font-size: 1.5rem;
+  color: #9797a1;
+}
+
+@media screen and (max-width: 550px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+  .footer img {
+    width: 8rem;
+  }
+  .footer p {
+    font-size: 0.9rem;
+  }
+}

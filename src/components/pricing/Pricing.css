@@ -1,0 +1,114 @@
+.pricing {
+  margin-bottom: 2rem;
+  font-family: 'Inter';
+  margin-bottom: 6rem;
+}
+.plans {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 0 10rem;
+}
+
+.plans .plan {
+  padding: 3rem 4rem;
+  transition: 0.5s ease-in-out;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px #888888;
+  cursor: pointer;
+}
+
+.plan h2 {
+  text-align: center;
+}
+.offres {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.plan h3 {
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: 'Inter';
+}
+
+.plan h2 {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+.plan h2 span {
+  font-size: 2.4rem;
+  font-weight: 800;
+}
+
+.plan h2 span strong {
+  font-size: 1.8rem;
+}
+
+.plan .list {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.plan .button {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  transition: 0.5s ease-in-out;
+  align-items: center;
+}
+
+.button button {
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #131316;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  .plans {
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+  .plans .plan {
+    padding: 3rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .plans {
+    gap: 1rem;
+    padding: 0 0.5rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .plans .plan {
+    padding: 2rem;
+    box-shadow: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .plans {
+    grid-template-columns: 1fr;
+    padding: 0 0.2rem;
+  }
+  .plans .plan {
+    padding: 1rem;
+  }
+
+  .plan .list {
+    margin-left: 5rem;
+  }
+}

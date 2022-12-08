@@ -1,0 +1,81 @@
+.mission {
+  margin: 0 15rem;
+  padding: 4rem 0;
+  padding-right: 4rem;
+  position: relative;
+}
+
+.mission .user {
+  width: 5rem;
+  margin-bottom: 2rem;
+}
+
+.mission h2 {
+  position: absolute;
+  color: #131316;
+  top: 5rem;
+  left: 3rem;
+  font-size: 2.5rem;
+}
+
+.mission span {
+  color: #4ae290;
+}
+
+.mission p {
+  font-family: 'Open sans';
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+
+.sub1 {
+  margin-bottom: 1rem;
+}
+.sub2 {
+  margin-bottom: 1.5rem;
+}
+
+.mission a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.4rem;
+  color: #131316;
+  font-family: 'inter';
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.mission a:hover {
+  gap: 1rem;
+}
+@media screen and (max-width: 1200px) {
+  .mission {
+    margin: 0 8rem;
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .mission {
+    margin: 0 5rem;
+    padding-right: 1rem;
+  }
+  .link a {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .mission {
+    margin: 0 1rem;
+  }
+  .mission p {
+    text-align: center;
+    font-size: 1rem;
+  }
+  .mission a {
+    margin-left: 6rem;
+  }
+}
